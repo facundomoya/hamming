@@ -137,11 +137,7 @@ export default function Home() {
                     }
                 </Flex>
             </Box>
-            <Flex bg={'lightgray'} w={'80px'} h={'55px'} borderRadius={'15px'} position={'absolute'} right={10} bottom={10} justify={'center'} align={'center'} cursor={'pointer'}>
-                <Text fontWeight={'bold'}>
-                    about
-                </Text>
-            </Flex>
+           
         </Flex>
     );
 }
