@@ -1,11 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {
-    Box,
     Text,
-    Link,
-    VStack,
-    Code,
-    Grid,
     TableContainer,
     Table,
     Thead,
@@ -13,10 +8,7 @@ import {
     Th,
     Tbody,
     Td,
-    Tfoot,
     Flex,
-    Input,
-    Tooltip,
     Button
 } from '@chakra-ui/react';
 const potenciasDeDos = ['1', '2', '4', '8', '16', '32']
