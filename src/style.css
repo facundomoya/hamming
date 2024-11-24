@@ -10,7 +10,7 @@
   /* Ocultar el QR en dispositivos pequeños */
   @media (max-width: 768px) {
     .qr-container {
-      display: none;
+      visibility: hidden;
     }
   }
   
