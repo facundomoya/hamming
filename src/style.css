@@ -2,14 +2,10 @@
 .qr-container {
     display: flex;
     margin: 15px 0px 15px 0px;
-
-  }
-
-.qr-container2{
     justify-content: center;
     align-items: center;
-    margin: auto;
-}
+  }
+
   
   /* Ocultar el QR en dispositivos pequeños */
   @media (max-width: 768px) {
@@ -19,8 +15,3 @@
   }
   
   /* Mostrar QR en dispositivos grandes */
-  @media (min-width: 769px) {
-    .qr-container {
-      display: block;
-    }
-  }

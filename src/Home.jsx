@@ -111,7 +111,7 @@ export default function Home() {
                 <Flex flexDir={'column'}>
                     <RenderTable rows={rows} />
                     <Flex className="qr-container" >
-                        <QRCodeCanvas className="qr-container2" value="https://hamming-com.netlify.app/" size={110}  />
+                        <QRCodeCanvas value="https://hamming-com.netlify.app/" size={110}  />
                             </Flex>
                     <Flex flexDir={'column'}>
                         <Text my={'10px'}>Vas a transmitir:</Text>
