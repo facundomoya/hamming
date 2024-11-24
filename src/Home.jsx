@@ -20,6 +20,7 @@ import {
     Button
 } from '@chakra-ui/react';
 import RenderRx from './RenderRx';
+import { QRCodeCanvas } from 'qrcode.react';
 const potenciasDeDos = ['1', '2', '4', '8', '16', '32']
 const potenciasDeDosStr = ['p1', 'p2', 'p3', 'p4', 'p5', 'p6']
 
@@ -107,8 +108,14 @@ export default function Home() {
                 <Input value={rows['n'].join('')} onChange={handleChangeStringToSend} placeholder='cadena a enviar max 10bits' my={'15px'} />
                 <Flex flexDir={'column'}>
                     <RenderTable rows={rows} />
+                    <Flex position={'relative'} justify={'center'} margin={'15px 0px 15px 0px'}>
+                        <QRCodeCanvas value="https://hamming-com.netlify.app/" size={110}  />
+                            </Flex>
                     <Flex flexDir={'column'}>
-                        <Text my={'15px'}>Vas a transmitir:</Text>
+                        <Text my={'10px'}>Vas a transmitir:</Text>
+                        <Box mt={4}>
+                           
+                    </Box>
                         <Flex justifyContent={'space-evenly'} w={'100%'}>
                             {
                                 TX && TX.map((tx, i) => {
