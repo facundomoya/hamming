@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import {
     Box,
     Text,
-    Link,
-    VStack,
-    Code,
-    Grid,
     TableContainer,
     Table,
     Thead,
@@ -13,11 +9,10 @@ import {
     Th,
     Tbody,
     Td,
-    Tfoot,
     Flex,
     Input,
     Tooltip,
-    Button
+
 } from '@chakra-ui/react';
 import RenderRx from './RenderRx';
 import { QRCodeCanvas } from 'qrcode.react';
